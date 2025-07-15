@@ -1,44 +1,50 @@
-🚀 Reddit User Persona Generator
-Internship Assessment - BeyondChats (AI/LLM Engineer Intern)
-📄 Project Overview
-This project is a Python-based tool that extracts data from a Reddit user's public profile (posts and comments) and generates a user persona using Google Gemini AI (via API).
+# 🚀 Reddit User Persona Generator  
+### Internship Assessment - BeyondChats (AI/LLM Engineer Intern)
+
+---
+
+## 📄 Project Overview  
+This project is a Python-based tool that extracts data from a Reddit user's public profile (posts and comments) and generates a **user persona** using **Google Gemini AI (via API)**.  
 The persona includes inferred details like interests, personality traits, writing style, and community involvement.
 
-🛠️ Tech Stack
-Python 3.11+
+---
 
-praw (Reddit API Wrapper)
+## 🛠️ Tech Stack
+- **Python 3.11+**
+- `praw` (Reddit API Wrapper)
+- `requests` (For Google Gemini API)
+- **Google Gemini 2.0 Flash API (Generative Language Model)**
 
-requests (For Google Gemini API)
+---
 
-Google Gemini 2.0 Flash API (Generative Language Model)
+## 🎯 How It Works
+- Takes a Reddit user profile link as input.
+- Fetches recent posts and comments via Reddit API.
+- Sends this data to Google Gemini LLM API.
+- Outputs a detailed user persona as a `.txt` file.
 
-🎯 How It Works
-Takes a Reddit user profile link as input.
+---
 
-Fetches recent posts and comments via Reddit API.
-
-Sends this data to Google Gemini LLM API.
-
-Outputs a detailed user persona as a .txt file.
-
-📂 Project Structure
-bash
-Copy
-Edit
+## 📂 Project Structure
 project/
 │
-├── main.py               # Main executable script
-├── requirements.txt       # Python dependencies
-├── README.md              # Project documentation
-└── output/                # Contains generated persona files
-    ├── kojied_persona.txt
-    └── Hungry-Move-6603_persona.txt
-⚙️ Setup Instructions
-1️⃣ Clone the Repository
-bash
+├── main.py # Main executable script
+├── requirements.txt # Python dependencies
+├── README.md # Project documentation
+└── output/ # Contains generated persona files
+├── kojied_persona.txt
+└── Hungry-Move-6603_persona.txt
+
+yaml
 Copy
 Edit
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+```bash
 git clone <your-repository-link>
 cd project/
 2️⃣ Install Dependencies
@@ -103,3 +109,7 @@ Google Gemini LLM is used via REST API for persona generation.
 🙋 Author
 Tanishk Porwal
 Submission for BeyondChats AI/LLM Engineer Internship Assessment.
+
+yaml
+Copy
+Edit
